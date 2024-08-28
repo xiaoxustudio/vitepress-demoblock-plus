@@ -1,12 +1,12 @@
 # 定制主题
 
-vitepress-demoblock-plus 的样式和 vitepress 完全一致，你可以参考 [vitepress](https://vitepress.vuejs.org/) 的定制方式进行配置。
+vitepress-demoblock-x 的样式和 vitepress 完全一致，你可以参考 [vitepress](https://vitepress.vuejs.org/) 的定制方式进行配置。
 
-## vitepress-demoblock-plus 的样式变量
+## vitepress-demoblock-x 的样式变量
 
-vitepress-demoblock-plus 的样式使用了 [Less](https://lesscss.org/) 作为开发语言，结合 vitepress 定义的一系列全局/组件的样式变量，你可以根据需求进行相应调整。
+vitepress-demoblock-x 的样式使用了 [Less](https://lesscss.org/) 作为开发语言，结合 vitepress 定义的一系列全局/组件的样式变量，你可以根据需求进行相应调整。
 
-以下是 vitepress-demoblock-plus 用到的样式变量，所有样式变量可以在 [这里](https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css) 找到。
+以下是 vitepress-demoblock-x 用到的样式变量，所有样式变量可以在 [这里](https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css) 找到。
 
 ```less
 --vp-c-divider-light: rgba(60, 60, 60, 0.12); // 边框颜色
@@ -25,7 +25,7 @@ vitepress-demoblock-plus 的样式使用了 [Less](https://lesscss.org/) 作为�
 ```js
 // .vitepress/theme/index.ts or .vitepress/theme/index.js
 import DefaultTheme from 'vitepress/theme'; //引入默认主题
-import demo from 'vitepress-demoblock-plus/demo.vue';
+import demo from 'vitepress-demoblock-x/demo.vue';
 import 'your-theme-vars.css';
 export default {
     ...DefaultTheme,

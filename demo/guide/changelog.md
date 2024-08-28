@@ -1,5 +1,5 @@
 # 更新日志
-<code>vitepress-demoblock-plus</code> 严格遵循 [Semantic Versioning 2.0.0](https://semver.org/lang/zh-CN/) 语义化版本规范。
+<code>vitepress-demoblock-x</code> 严格遵循 [Semantic Versioning 2.0.0](https://semver.org/lang/zh-CN/) 语义化版本规范。
 
 ## 版本记录(plus)
 

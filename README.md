@@ -1,11 +1,13 @@
 <div align="center">
-	<h1 align="center">vitepress-demoblock-plus</h1>
+	<h1 align="center">vitepress-demoblock-xr</h1>
 </div>
 <p>&emsp;&emsp;为vitepress添加更专业的Demo演示能力，让您在开发vue组件库或者vue相关文档编写时，可以通过引入vue文件的时候结果显示和代码演示。</p>
 
 **PS：原插件作者不更新了，还有很多 bug 呢，那么我就来自己 fork 更新一波**
 
 **欢迎提出您的 Issue，我看到就会尝试修复，也欢迎各位的 PR**
+
+**以下是原仓库文档，我将保留其文档内容，方便查阅**
 
 ## 文档
 
@@ -19,22 +21,22 @@
 # 选择一个你喜欢的包管理器
 
 # NPM
-$ npm install vitepress-demoblock --save
+$ npm install vitepress-demoblock-xr --save
 
 # Yarn
-$ yarn add vitepress-demoblock
+$ yarn add vitepress-demoblock-xr
 
 # pnpm
-$ pnpm install vitepress-demoblock
+$ pnpm install vitepress-demoblock-xr
 ```
 
 ## 引入
 
-先注册 `vitepress-demoblock` 提供的 markdown 解析插件
+先注册 `vitepress-demoblock-xr` 提供的 markdown 解析插件
 
 ```js
 // .vitepress/config.ts or .vitepress/config.js
-import demoblock from "vitepress-demoblock";
+import demoblock from "vitepress-demoblock-xr";
 export default {
 	// ...
 	markdown: {
@@ -46,12 +48,12 @@ export default {
 };
 ```
 
-再引入 `vitepress-demoblock` 提供的 demo 组件
+再引入 `vitepress-demoblock-xr` 提供的 demo 组件
 
 ```js
 // .vitepress/theme/index.ts or .vitepress/theme/index.js
 import DefaultTheme from 'vitepress/theme'; //引入默认主题
-import demo from 'vitepress-demoblock/demo.vue'
+import demo from 'vitepress-demoblock-xr/demo.vue'
 export default {
     ...DefaultTheme,
     enhanceApp({ app }) {
