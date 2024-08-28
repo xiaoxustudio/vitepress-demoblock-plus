@@ -1,56 +1,60 @@
 {
-  "private": true,
-  "name": "vitepress-demoblock",
-  "version": "1.0.3",
-  "description": "为vitepress添加更专业的Demo演示能力",
-  "main": "index.js",
-  "module": "index.js",
-  "types": "index.d.ts",
-  "type": "module",
-  "files": [
-    "demo.vue",
-    "index.js",
-    "README.md",
-    "index.d.ts"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/1006008051/vitepress-demoblock.git"
-  },
-  "homepage": "https://1006008051.github.io/vitepress-demoblock",
-  "bugs": {
-    "url": "https://github.com/1006008051/vitepress-demoblock/issues"
-  },
-  "author": "Wang Yongcun",
-  "license": "MIT",
-  "engines": {
-    "node": ">=14"
-  },
-  "scripts": {
-    "dev": "rimraf -G ./script/demo.vue && vitepress dev",
-    "build": "npm run build:es && npm run build:docs",
-    "build:es": "rimraf -G ./script/src && tsc -b -f",
-    "build:docs": "rimraf -G ./script/demo.vue &&  vitepress build",
-    "serve": "vitepress serve",
-    "release": "node script/release && rimraf -G ./script/src"
-  },
-  "keywords": [
-    "vitepress-demoblock",
-    "vitepress",
-    "vitepress-demo",
-    "vitepress-theme",
-    "vitepress-theme-demoblock",
-    "vue代码组件示例",
-    "vitepress代码组件示例"
-  ],
-  "devDependencies": {
-    "@element-plus/icons-vue": "2.0.10",
-    "@types/node": "^18.7.23",
-    "element-plus": "2.2.17",
-    "rimraf": "3.0.0",
-    "sass": "^1.55.0",
-    "shiki": "^0.11.1",
-    "typescript": "^4.8.4",
-    "vitepress": "^1.0.0-alpha.22"
-  }
+	"private": true,
+	"name": "vitepress-demoblock-plus",
+	"version": "2.0.0",
+	"description": "为vitepress添加更专业的Demo演示能力",
+	"main": "index.js",
+	"module": "index.js",
+	"types": "index.d.ts",
+	"type": "module",
+	"files": [
+		"demo.vue",
+		"index.js",
+		"README.md",
+		"index.d.ts"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/xiaoxustudio/vitepress-demoblock-plus.git"
+	},
+	"homepage": "https://xiaoxustudio.github.io/vitepress-demoblock-plus",
+	"bugs": {
+		"url": "https://github.com/xiaoxustudio/vitepress-demoblock-plus/issues"
+	},
+	"author": "Xuran",
+	"license": "MIT",
+	"engines": {
+		"node": ">=14"
+	},
+	"scripts": {
+		"dev": "rimraf -G ./script/demo.vue && vitepress dev",
+		"build": "pnpm build:es && npm run build:docs",
+		"build:es": "rimraf -G ./script/src && tsc -b -f",
+		"build:docs": "rimraf -G ./script/demo.vue && vitepress build",
+		"serve": "vitepress serve",
+		"release": "node script/release && rimraf -G ./script/src"
+	},
+	"keywords": [
+		"vitepress-demoblock",
+		"vitepress-demoblock-plus",
+		"vitepress",
+		"vitepress-demo",
+		"vitepress-theme",
+		"vitepress-theme-demoblock",
+		"vue代码组件示例",
+		"vitepress代码组件示例"
+	],
+	"devDependencies": {
+		"@element-plus/icons-vue": "2.0.10",
+		"@types/node": "^18.7.23",
+		"element-plus": "2.2.17",
+		"rimraf": "^6.0.1",
+		"sass": "^1.55.0",
+		"typescript": "^4.8.4",
+		"vitepress": "^1.3.4"
+	},
+	"dependencies": {
+		"shiki": "^1.14.1",
+		"vue": "^3.4.38"
+	}
 }

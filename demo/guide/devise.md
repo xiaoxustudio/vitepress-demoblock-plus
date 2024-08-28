@@ -1,5 +1,5 @@
 # 简介
-vitepress-demoblock 致力于为vitepress添加更专业的Demo演示能力
+vitepress-demoblock-plus 致力于为vitepress添加更专业的Demo演示能力
 
 ::: tip
 在开始之前，推荐先学习 [vue](https://vuejs.org/)、[vite](https://cn.vitejs.dev/)和 [vitepress](https://vitepress.vuejs.org/)，并正确安装和配置了 Node.js v14 或以上。官方指南假设你已了解关于 vue 和 vitepress 的中级知识，并且已经完全掌握了 vitepress 的正确开发方式。
@@ -24,7 +24,7 @@ vitepress 凭借着 vite 的秒级启动速度、markdown-it 的强大扩展能�
 ## 解决方案
 
 你所写的 markdown 文档最终都会转成 vue 组件。其原理很简单：把 markdown 渲染成 html 字符串，然后动态生成一个 vue 组件，模版内容就是渲染好的 html 字符串。所以它支持在 markdown 里运行 vue 组件顺理成章。目前已有的解决方案也都是基于markdown插件进行着手的。
-##### vitepress-demoblock
+##### vitepress-demoblock-plus
 处理方式参照了vitepress-for-component的写法，全局注册demo组件进行实现。例如：
 ```
 <demo src="../component/button.vue" desc="使用 `type`、`plain`、`round` 和 `circle` 来定义按钮的样式。" lang="vue"></demo>
@@ -113,4 +113,4 @@ export const demoPlugin = (md: MarkdownIt) => {
 };
 ```
 
-可以看出，这是自定义了 html 渲染，如果 html 标签是 demo 的话，就修改成自己想要的样子, 但是这里会有一个问题demo组件里如果还有script引入的资源将无法处理且 vitepress-for-component 是 fork vitepress 的，后期vipress升级之后，一些改动会变的很繁琐。所以vitepress-demoblock采用非fork的形式开发。
+可以看出，这是自定义了 html 渲染，如果 html 标签是 demo 的话，就修改成自己想要的样子, 但是这里会有一个问题demo组件里如果还有script引入的资源将无法处理且 vitepress-for-component 是 fork vitepress 的，后期vipress升级之后，一些改动会变的很繁琐。所以vitepress-demoblock-plus采用非fork的形式开发。

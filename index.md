@@ -2,8 +2,8 @@
 layout: home
 
 hero:
-#   name: vitepress-demoblock
-  text: vitepress demoblock
+#   name: vitepress-demoblock-plus
+  text: vitepress demoblock plus
   tagline: 为vitepress添加更专业的Demo演示能力
   # image:
   #   src: /logo.svg
@@ -14,7 +14,7 @@ hero:
       link: /demo/guide/quickstart
     - theme: alt
       text: 在GitHub上查看
-      link: https://github.com/1006008051/vitepress-demoblock
+      link: https://github.com/xiaoxustudio/vitepress-demoblock-plus
 features:
   - icon: ⚡️
     title: 基于vitepress
