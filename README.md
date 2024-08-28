@@ -7,6 +7,8 @@
 
 **欢迎提出您的 Issue，我看到就会尝试修复，也欢迎各位的 PR**
 
+**原本是打算取名为vitepress-demoblock-plus，但这名字在npm已经被注册了，所以plus就改为xr了**
+
 **以下是原仓库文档，我将保留其文档内容，方便查阅**
 
 ## 文档
@@ -17,17 +19,31 @@
 
 我们建议您使用包管理器 (NPM,[Yarn](https://classic.yarnpkg.com/lang/en/), [pnpm](https://pnpm.io/) 安装 <code>vitepress-demoblock</code>
 
-```
+
+```sh
 # 选择一个你喜欢的包管理器
 
 # NPM
-$ npm install vitepress-demoblock-xr --save
+npm install vitepress-demoblock-xr
 
 # Yarn
-$ yarn add vitepress-demoblock-xr
+yarn add vitepress-demoblock-xr
 
 # pnpm
-$ pnpm install vitepress-demoblock-xr
+pnpm install vitepress-demoblock-xr
+```
+
+**使用前请确保您安装了shiki库**
+
+```sh
+# NPM
+npm install shiki
+
+# Yarn
+yarn add shiki
+
+# pnpm
+pnpm install shiki
 ```
 
 ## 引入
